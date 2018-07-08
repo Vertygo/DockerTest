@@ -3,5 +3,5 @@ dist: trusty
 mono: none
 dotnet: 2.1.301
 script:
-- dotnet restore TestDocker
-- dotnet build TestDocker
+- dotnet restore TestDocker.csproj
+- dotnet build TestDocker.csproj
