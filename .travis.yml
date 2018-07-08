@@ -9,6 +9,6 @@ script:
 - dotnet restore TestDocker.csproj
 - dotnet build TestDocker.csproj
 - docker build -t vertygo/testdocker .
-- docker tag vertygo/testdocker:$TRAVIS_TAG vertygo/testdocker:latest
+- docker tag vertygo/testdocker:latest
 - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-- docker push vertygo/testdocker:$TRAVIS_TAG
+- docker push vertygo/testdocker:latest
