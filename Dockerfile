@@ -6,7 +6,7 @@ EXPOSE 44371
 FROM microsoft/dotnet:2.1-sdk AS build
 WORKDIR /src
 COPY TestDocker.csproj ./
-RUN dotnet restore /TestDocker.csproj
+RUN dotnet restore TestDocker.csproj
 COPY . .
 WORKDIR /src/
 RUN dotnet build TestDocker.csproj -c Release -o /app
