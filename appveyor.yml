@@ -1,0 +1,26 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+environment:
+  DOCKER_USER:
+    secure: 01Y9bAJgSTtnjwXHB3DWIm9G3XW16IazeEdTKNXMI+A=
+  DOCKER_PASS:
+    secure: euDyH/qKlvolmOvjNCWggg==
+
+services:
+- docker
+
+install:
+  - nuget restore
+
+build:
+  parallel: true
+  project: TestDocker.sln
+  verbosity: minimal
+
+build_script:
+  - docker build -t testdockerfullframework TestDockerFullFramework
+  - docker tag testdockerfullframework repo.treescale.com/vertygo/testdockerfullframework
+
+deploy_script:
+  - docker login -u="$env:DOCKER_USER" -p="$env:DOCKER_PASS" repo.treescale.com
+  - docker push repo.treescale.com/vertygo/testdockerfullframework
