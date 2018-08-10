@@ -12,12 +12,8 @@ services:
 install:
   - nuget restore
 
-build:
-  parallel: true
-  project: TestDocker.sln
-  verbosity: minimal
-
 build_script:
+  - msbuild TestDocker.sln
   - docker build -t testdockerfullframework TestDockerFullFramework
   - docker tag testdockerfullframework repo.treescale.com/vertygo/testdockerfullframework
 

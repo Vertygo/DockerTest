@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Windows</DockerTargetOS>
-    <ProjectGuid>4371b8ea-bb76-4cc5-967e-d015948b64d6</ProjectGuid>
+    <ProjectGuid>04796c69-338c-4a9e-9b94-8e68f2b361a5</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>http://{ServiceIPAddress}</DockerServiceUrl>
     <DockerServiceName>testdockerfullframework</DockerServiceName>
