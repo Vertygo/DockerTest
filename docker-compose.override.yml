@@ -1,17 +1,10 @@
 version: '3.4'
 
 services:
-  testdocker:
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=https://+:443;http://+:80
-      - ASPNETCORE_HTTPS_PORT=44371
-    ports:
-      - "60893:80"
-      - "44371:443"
-    volumes:
-      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
-      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
   testdockerfullframework:
     ports:
       - "80"
+networks:
+  default:
+    external:
+      name: nat

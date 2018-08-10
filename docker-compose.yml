@@ -1,15 +1,8 @@
 version: '3.4'
 
 services:
-#  testdocker:
-#    image: ${DOCKER_REGISTRY}testdocker
-#    build:
-#      context: .\TestDocker
-#      dockerfile: Dockerfile
-
   testdockerfullframework:
     image: ${DOCKER_REGISTRY}testdockerfullframework
     build:
       context: .\TestDockerFullFramework
       dockerfile: Dockerfile
-
