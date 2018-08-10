@@ -2,7 +2,7 @@ version: 1.0.{build}
 image: Visual Studio 2017
 environment:
   DOCKER_USER:
-    secure: 01Y9bAJgSTtnjwXHB3DWIm9G3XW16IazeEdTKNXMI+A=
+    secure: lE8GCxONKoCsPhdTOE2uZw==
   DOCKER_PASS:
     secure: euDyH/qKlvolmOvjNCWggg==
 
