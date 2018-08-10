@@ -18,5 +18,5 @@ build_script:
   - docker tag testdockerfullframework repo.treescale.com/vertygo/testdockerfullframework
 
 deploy_script:
-  - docker login -u="$env:DOCKER_USER" -p="$env:DOCKER_PASS" repo.treescale.com
+  - echo $env:DOCKER_PASS | docker login -u="$env:DOCKER_USER" repo.treescale.com --password-stdin
   - docker push repo.treescale.com/vertygo/testdockerfullframework
