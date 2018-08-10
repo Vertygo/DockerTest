@@ -19,4 +19,4 @@ build_script:
 
 deploy_script:
   - ps: echo $env:DOCKER_PASS | docker login -u="$env:DOCKER_USER" repo.treescale.com --password-stdin
-  - docker push repo.treescale.com/Vertygo/testdockerfullframework
+  - docker push repo.treescale.com/vertygo/testdockerfullframework
