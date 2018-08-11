@@ -5,7 +5,7 @@ environment:
     secure: ozABIPjQgbSATvzfe8ib+w==
   DOCKER_PASS:
     secure: euDyH/qKlvolmOvjNCWggg==
-  DOCKER_REGISTRY: vertygo
+  DOCKER_REGISTRY: repo.treescale.com/vertygo/
 
 services:
 - docker
@@ -15,8 +15,6 @@ install:
 
 build_script:
   - msbuild TestDocker.sln
-  - docker build -t testdockerfullframework TestDockerFullFramework
-  - docker tag testdockerfullframework repo.treescale.com/vertygo/testdockerfullframework
 
 deploy_script:
   - ps: echo $env:DOCKER_PASS | docker login -u="$env:DOCKER_USER" repo.treescale.com --password-stdin

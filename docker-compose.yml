@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   testdockerfullframework:
-    image: ${DOCKER_REGISTRY}/testdockerfullframework
+    image: ${DOCKER_REGISTRY}testdockerfullframework
     build:
       context: .\TestDockerFullFramework
       dockerfile: Dockerfile
