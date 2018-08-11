@@ -4,7 +4,7 @@ environment:
   DOCKER_USER:
     secure: ozABIPjQgbSATvzfe8ib+w==
   DOCKER_PASS:
-    secure: euDyH/qKlvolmOvjNCWggg==
+    secure: sxD1Yw1lkwYqX8rowyloHSJCMwZYnxhJZDlTU3dWV+KlfT1J6eJe1h8/ncbDsCMj
 
 services:
 - docker
@@ -14,9 +14,9 @@ install:
 
 build_script:
   - msbuild TestDocker.sln /t:Build /p:Configuration=Release
-  - docker tag testdockerfullframework repo.treescale.com/vertygo/testdockerfullframework
+  - docker tag testdockerfullframework r.cfcr.io/vertygo/testdockerfullframework
 
 deploy_script:
   - docker images
-  - ps: echo $env:DOCKER_PASS | docker login -u="$env:DOCKER_USER" repo.treescale.com --password-stdin
-  - docker push repo.treescale.com/vertygo/testdockerfullframework
+  - ps: echo $env:DOCKER_PASS | docker login -u="$env:DOCKER_USER" r.cfcr.io --password-stdin
+  - docker push r.cfcr.io/vertygo/testdockerfullframework
