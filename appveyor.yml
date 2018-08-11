@@ -14,6 +14,7 @@ install:
 
 build_script:
   - msbuild TestDocker.sln /t:Build /p:Configuration=Release
+  - docker tag testdockerfullframework repo.treescale.com/vertygo/testdockerfullframework
 
 deploy_script:
   - docker images
