@@ -5,7 +5,6 @@ environment:
     secure: ozABIPjQgbSATvzfe8ib+w==
   DOCKER_PASS:
     secure: euDyH/qKlvolmOvjNCWggg==
-  DOCKER_REGISTRY: repo.treescale.com/vertygo/
 
 services:
 - docker
@@ -14,7 +13,7 @@ install:
   - nuget restore
 
 build_script:
-  - msbuild TestDocker.sln
+  - msbuild TestDocker.sln /t:Build /p:Configuration=Release
 
 deploy_script:
   - docker images
