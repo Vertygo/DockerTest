@@ -10,6 +10,7 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.2" />
+        <PackageReference Include="Shouldly" Version="4.1.0" />
         <PackageReference Include="System.Data.SqlClient" Version="4.5.1" />
         <PackageReference Include="xunit" Version="2.4.2" />
         <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
@@ -20,6 +21,13 @@
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
             <PrivateAssets>all</PrivateAssets>
         </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="System.Data.Common" Version="4.3.0" />
+        <PackageReference Include="Weasel.CommandLine" Version="6.0.0-alpha.6" />
+        <PackageReference Include="Weasel.Core" Version="6.0.0-alpha.6" />
+        <PackageReference Include="Weasel.SqlServer" Version="6.0.0-alpha.6" />
     </ItemGroup>
 
 </Project>
