@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDockerFullFramework", "
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{04796C69-338C-4A9E-9B94-8E68F2B361A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{0E56DAA2-B47C-41CE-B374-E50820DE14D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersistenceTests", "PersistenceTests\PersistenceTests.csproj", "{0E56DAA2-B47C-41CE-B374-E50820DE14D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingSupport", "TestingSupport\TestingSupport.csproj", "{1B09620A-F770-4A8B-8AAB-A9F314961706}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{0E56DAA2-B47C-41CE-B374-E50820DE14D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E56DAA2-B47C-41CE-B374-E50820DE14D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E56DAA2-B47C-41CE-B374-E50820DE14D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B09620A-F770-4A8B-8AAB-A9F314961706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B09620A-F770-4A8B-8AAB-A9F314961706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B09620A-F770-4A8B-8AAB-A9F314961706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B09620A-F770-4A8B-8AAB-A9F314961706}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
