@@ -35,6 +35,7 @@
         <PackageReference Include="Weasel.CommandLine" Version="6.0.0-alpha.6" />
         <PackageReference Include="Weasel.Core" Version="6.0.0-alpha.6" />
         <PackageReference Include="Weasel.SqlServer" Version="6.0.0-alpha.6" />
+        <PackageReference Include="GitHubActionsTestLogger" Version="2.0.1" PrivateAssets="All" />
     </ItemGroup>
 
     <ItemGroup>
